@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Spinner } from "@/components/ui/spinner";
+import { Input } from "@/components/ui/input";
 
 export default function Home() {
   return (
@@ -60,6 +61,33 @@ export default function Home() {
           <Spinner size="sm" />
           <Spinner size="md" />
           <Spinner size="lg" />
+        </div>
+      </section>
+      <section>
+        <h2>Inputs</h2>
+
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "16px",
+            marginTop: "16px",
+            maxWidth: "400px",
+          }}
+        >
+          <Input label="Nome" placeholder="Digite seu nome" />
+
+          <Input label="Email" placeholder="Digite seu email" />
+
+          <Input label="Senha" placeholder="Digite sua senha" type="password" />
+
+          <Input
+            label="Campo com erro"
+            placeholder="Digite um valor"
+            error="Este campo é obrigatório"
+          />
+
+          <Input label="Desabilitado" placeholder="Não pode editar" disabled />
         </div>
       </section>
     </main>

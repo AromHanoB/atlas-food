@@ -1,0 +1,37 @@
+:root {
+  /* Background */
+
+  --input-bg: var(--color-white);
+
+  /* Text */
+
+  --input-text: var(--color-text);
+
+  --input-placeholder: var(--color-text-muted);
+
+  /* Border */
+
+  --input-border: var(--color-border);
+
+  --input-border-focus: var(--color-primary);
+
+  --input-border-error: var(--color-danger);
+
+  /* Radius */
+
+  --input-radius: var(--radius-md);
+
+  /* Shadow */
+
+  --input-shadow-focus: 0 0 0 3px rgba(249, 115, 22, 0.15);
+
+  /* Sizes */
+
+  --input-height: 44px;
+
+  --input-padding: 0 var(--spacing-4);
+
+  /* Transition */
+
+  --input-transition: var(--transition-fast);
+}
