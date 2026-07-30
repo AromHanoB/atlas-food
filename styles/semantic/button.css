@@ -1,0 +1,33 @@
+/* ===========================
+   Button
+=========================== */
+
+:root {
+  /* Primary */
+
+  --button-primary-bg: var(--color-primary);
+
+  --button-primary-bg-hover: var(--color-primary-600);
+
+  --button-primary-bg-active: var(--color-primary-700);
+
+  --button-primary-text: var(--color-white);
+
+  --button-primary-border: transparent;
+
+  --button-primary-radius: var(--radius-md);
+
+  --button-primary-shadow: var(--shadow-sm);
+
+  --button-primary-transition: var(--transition-fast);
+
+  /* Sizes */
+
+  --button-height-sm: 36px;
+  --button-height-md: 44px;
+  --button-height-lg: 52px;
+
+  --button-padding-sm: 0 var(--spacing-3);
+  --button-padding-md: 0 var(--spacing-4);
+  --button-padding-lg: 0 var(--spacing-6);
+}
