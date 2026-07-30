@@ -1,5 +1,5 @@
 import { cn } from "@/utils/cn";
-
+import { Spinner } from "../spinner";
 import styles from "./Button.module.css";
 import type { ButtonProps } from "./Button.types";
 
@@ -21,28 +21,20 @@ export function Button({
     styles[size],
     loading && styles.loading,
     fullWidth && styles.fullWidth,
-    className
+    className,
   );
 
   return (
-    <button
-      className={classes}
-      disabled={disabled || loading}
-      {...props}
-    >
-      {leftIcon && (
-        <span className={styles.icon}>
-          {leftIcon}
-        </span>
+    <button className={classes} disabled={disabled || loading} {...props}>
+      {loading ? (
+        <Spinner size="sm" />
+      ) : (
+        leftIcon && <span className={styles.icon}>{leftIcon}</span>
       )}
 
       <span>{children}</span>
 
-      {rightIcon && (
-        <span className={styles.icon}>
-          {rightIcon}
-        </span>
-      )}
+      {rightIcon && <span className={styles.icon}>{rightIcon}</span>}
     </button>
   );
-}   
+}

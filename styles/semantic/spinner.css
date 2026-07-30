@@ -1,0 +1,9 @@
+:root {
+  --spinner-color: var(--color-primary);
+
+  --spinner-size-sm: 1rem;
+  --spinner-size-md: 1.5rem;
+  --spinner-size-lg: 2rem;
+
+  --spinner-border-width: 3px;
+}
