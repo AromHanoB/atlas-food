@@ -4,6 +4,10 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { useState } from "react";
+import { Modal } from "@/components/ui/modal";
+
+const [isOpen, setIsOpen] = useState(false);
 
 export default function Home() {
   return (
@@ -180,6 +184,28 @@ export default function Home() {
 
           <Badge variant="neutral">Rascunho</Badge>
         </div>
+      </section>
+      <section>
+        <h2>Modal</h2>
+
+        <Button onClick={() => setIsOpen(true)}>Abrir Modal</Button>
+
+        <Modal
+          isOpen={isOpen}
+          title="Novo Pedido"
+          onClose={() => setIsOpen(false)}
+          footer={
+            <>
+              <Button variant="secondary" onClick={() => setIsOpen(false)}>
+                Cancelar
+              </Button>
+
+              <Button>Salvar</Button>
+            </>
+          }
+        >
+          <p>Este é um exemplo do componente Modal da UI Library.</p>
+        </Modal>
       </section>
     </main>
   );

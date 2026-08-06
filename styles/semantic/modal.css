@@ -1,0 +1,15 @@
+:root {
+  --modal-bg: var(--color-white);
+
+  --modal-overlay: rgba(2, 6, 23, 0.55);
+
+  --modal-radius: var(--radius-xl);
+
+  --modal-shadow: var(--shadow-xl);
+
+  --modal-padding: var(--spacing-6);
+
+  --modal-max-width: 520px;
+
+  --modal-transition: var(--transition-normal);
+}
