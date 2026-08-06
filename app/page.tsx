@@ -3,6 +3,7 @@ import { Spinner } from "@/components/ui/spinner";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 
 export default function Home() {
   return (
@@ -156,6 +157,28 @@ export default function Home() {
 
             <Card.Footer>Meta: R$ 3.000,00</Card.Footer>
           </Card>
+        </div>
+      </section>
+      <section>
+        <h2>Badges</h2>
+
+        <div
+          style={{
+            display: "flex",
+            gap: "12px",
+            flexWrap: "wrap",
+            marginTop: "16px",
+          }}
+        >
+          <Badge>Novo</Badge>
+
+          <Badge variant="success">Entregue</Badge>
+
+          <Badge variant="warning">Em preparo</Badge>
+
+          <Badge variant="danger">Cancelado</Badge>
+
+          <Badge variant="neutral">Rascunho</Badge>
         </div>
       </section>
     </main>
