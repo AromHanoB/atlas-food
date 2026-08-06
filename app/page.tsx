@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Spinner } from "@/components/ui/spinner";
 import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 
 export default function Home() {
   return (
@@ -88,6 +89,38 @@ export default function Home() {
           />
 
           <Input label="Desabilitado" placeholder="Não pode editar" disabled />
+        </div>
+      </section>
+      <section>
+        <h2>Textareas</h2>
+
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "16px",
+            marginTop: "16px",
+            maxWidth: "400px",
+          }}
+        >
+          <Textarea label="Descrição" placeholder="Digite uma descrição..." />
+
+          <Textarea
+            label="Observações"
+            placeholder="Ex.: sem cebola, ponto da carne..."
+          />
+
+          <Textarea
+            label="Campo com erro"
+            placeholder="Digite um texto..."
+            error="Este campo é obrigatório"
+          />
+
+          <Textarea
+            label="Desabilitado"
+            placeholder="Não pode editar"
+            disabled
+          />
         </div>
       </section>
     </main>

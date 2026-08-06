@@ -1,0 +1,23 @@
+:root {
+  --textarea-bg: var(--input-bg);
+
+  --textarea-text: var(--input-text);
+
+  --textarea-placeholder: var(--input-placeholder);
+
+  --textarea-border: var(--input-border);
+
+  --textarea-border-focus: var(--input-border-focus);
+
+  --textarea-border-error: var(--input-border-error);
+
+  --textarea-radius: var(--input-radius);
+
+  --textarea-shadow-focus: var(--input-shadow-focus);
+
+  --textarea-padding: var(--spacing-4);
+
+  --textarea-min-height: 120px;
+
+  --textarea-transition: var(--transition-fast);
+}
