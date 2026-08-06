@@ -1,3 +1,4 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import { Spinner } from "@/components/ui/spinner";
 import { Input } from "@/components/ui/input";
@@ -6,10 +7,10 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { useState } from "react";
 import { Modal } from "@/components/ui/modal";
-
-const [isOpen, setIsOpen] = useState(false);
+import { Dropdown } from "@/components/ui/dropdown";
 
 export default function Home() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <main
       style={{
@@ -206,6 +207,27 @@ export default function Home() {
         >
           <p>Este é um exemplo do componente Modal da UI Library.</p>
         </Modal>
+      </section>
+      <section>
+        <h2>Dropdown</h2>
+
+        <Dropdown
+          trigger={<Button>Abrir Menu</Button>}
+          items={[
+            {
+              label: "Editar",
+              onClick: () => alert("Editar"),
+            },
+            {
+              label: "Duplicar",
+              onClick: () => alert("Duplicar"),
+            },
+            {
+              label: "Excluir",
+              onClick: () => alert("Excluir"),
+            },
+          ]}
+        />
       </section>
     </main>
   );

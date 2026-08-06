@@ -1,0 +1,55 @@
+.container {
+  position: relative;
+
+  display: inline-block;
+}
+
+.menu {
+  position: absolute;
+
+  top: calc(100% + 8px);
+
+  right: 0;
+
+  min-width: var(--dropdown-min-width);
+
+  background: var(--dropdown-bg);
+
+  border: var(--border-default);
+
+  border-radius: var(--dropdown-radius);
+
+  box-shadow: var(--dropdown-shadow);
+
+  padding: var(--dropdown-padding);
+
+  z-index: var(--z-dropdown);
+}
+
+.item {
+  width: 100%;
+
+  border: none;
+
+  background: transparent;
+
+  text-align: left;
+
+  padding: var(--dropdown-item-padding);
+
+  border-radius: var(--radius-md);
+
+  cursor: pointer;
+
+  transition: var(--dropdown-transition);
+}
+
+.item:hover:not(:disabled) {
+  background: var(--dropdown-item-hover);
+}
+
+.item:disabled {
+  opacity: .5;
+
+  cursor: not-allowed;
+}

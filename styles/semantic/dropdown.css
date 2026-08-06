@@ -1,0 +1,19 @@
+:root {
+  --dropdown-bg: var(--color-white);
+
+  --dropdown-border: var(--color-border);
+
+  --dropdown-radius: var(--radius-lg);
+
+  --dropdown-shadow: var(--shadow-lg);
+
+  --dropdown-padding: var(--spacing-2);
+
+  --dropdown-item-padding: var(--spacing-3) var(--spacing-4);
+
+  --dropdown-item-hover: var(--color-surface);
+
+  --dropdown-transition: var(--transition-fast);
+
+  --dropdown-min-width: 220px;
+}
