@@ -1,0 +1,25 @@
+:root {
+  /* Background */
+
+  --card-bg: var(--color-surface);
+
+  /* Border */
+
+  --card-border: var(--color-border);
+
+  /* Radius */
+
+  --card-radius: var(--radius-lg);
+
+  /* Shadow */
+
+  --card-shadow: var(--shadow-md);
+
+  /* Padding */
+
+  --card-padding: var(--spacing-6);
+
+  /* Transition */
+
+  --card-transition: var(--transition-fast);
+}

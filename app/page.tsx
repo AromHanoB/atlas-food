@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Spinner } from "@/components/ui/spinner";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Card } from "@/components/ui/card";
 
 export default function Home() {
   return (
@@ -121,6 +122,40 @@ export default function Home() {
             placeholder="Não pode editar"
             disabled
           />
+        </div>
+      </section>
+      <section>
+        <h2>Cards</h2>
+
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+            gap: "24px",
+            marginTop: "16px",
+          }}
+        >
+          <Card>
+            <Card.Header>Pedidos Hoje</Card.Header>
+
+            <Card.Body>
+              <h3>124</h3>
+              <p>Pedidos realizados hoje.</p>
+            </Card.Body>
+
+            <Card.Footer>Atualizado há 5 minutos</Card.Footer>
+          </Card>
+
+          <Card>
+            <Card.Header>Faturamento</Card.Header>
+
+            <Card.Body>
+              <h3>R$ 2.450,00</h3>
+              <p>Receita do dia.</p>
+            </Card.Body>
+
+            <Card.Footer>Meta: R$ 3.000,00</Card.Footer>
+          </Card>
         </div>
       </section>
     </main>
